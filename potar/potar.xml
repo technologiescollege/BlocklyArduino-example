@@ -1,0 +1,28 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_LOGIC,CAT_MATH,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_LOOPS,CAT_bluetooth,CAT_ARDUINO,CAT_actionneur,CAT_ultrason,CAT_com
+	
+  
+  </toolboxcategories>
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="base_loop" id="w6gO7L`/x*Jzf$/sO,#H" x="95" y="28">
+    <statement name="LOOP">
+      <block type="moteur3v" id="37mMbcb^Be@P@8It]^A,">
+        <field name="pin">3</field>
+        <value name="speed">
+          <block type="potentiometre" id="ui~mKU;`tpm}W*m|Rto(">
+            <field name="broche">A0</field>
+          </block>
+        </value>
+        <next>
+          <block type="base_delay" id="79FI@jH8/USVLr-DQ%m_">
+            <value name="DELAY_TIME">
+              <block type="math_number" id="Q1el!$1nf|bz|kR:.UcI">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

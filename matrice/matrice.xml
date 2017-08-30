@@ -1,0 +1,75 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_LOGIC,CAT_MATH,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_LOOPS,CAT_bluetooth,CAT_ARDUINO,CAT_actionneur,CAT_ultrason,CAT_com
+	
+  </toolboxcategories>
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="base_define" id="pBc+H`s5+e!#~7`5~ik4" x="-20" y="43">
+    <statement name="DO">
+      <block type="matrice8x8_init" id="!lWo]t1ac79}TtGjpYz~">
+        <value name="DIN">
+          <block type="math_number" id="5XZRx%[s/={49,)ndB2u">
+            <field name="NUM">12</field>
+          </block>
+        </value>
+        <value name="CLK">
+          <block type="math_number" id="kHo(16C0([]+o^%B-Dik">
+            <field name="NUM">11</field>
+          </block>
+        </value>
+        <value name="CS">
+          <block type="math_number" id=":tBlNg|++cAE)Y3Xi,bY">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <next>
+          <block type="matrice8x8_symbole" id="BioJ5F@/tR2JDJlFVEzN">
+            <field name="NAME">smiley</field>
+            <field name="L1">00000000</field>
+            <field name="L2">01000010</field>
+            <field name="L3">01000010</field>
+            <field name="L4">00000000</field>
+            <field name="L5">00000000</field>
+            <field name="L6">10000001</field>
+            <field name="L7">01000010</field>
+            <field name="L8">00111100</field>
+            <next>
+              <block type="matrice8x8" id="bX*NA*]7n$jBxWwn_{-R">
+                <field name="symbole_matrice">rien</field>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="base_loop" id="wgWYb~x6n~[lB`P(S?=L" x="325" y="107">
+    <statement name="LOOP">
+      <block type="matrice8x8_aff" id="X-5@[vOLcpGsA#F;7o,4">
+        <field name="TEXT">smiley</field>
+        <next>
+          <block type="base_delay" id="uqn!nifgqY.II(,u%m=s">
+            <value name="DELAY_TIME">
+              <block type="math_number" id="w6[/A-=}yh,2L?41HoVR">
+                <field name="NUM">500</field>
+              </block>
+            </value>
+            <next>
+              <block type="matrice8x8_aff" id="1m^$kN=FZow^0QTGfT[A">
+                <field name="TEXT">rien</field>
+                <next>
+                  <block type="base_delay" id="$|(uw]qFKn6/059d,QJ7">
+                    <value name="DELAY_TIME">
+                      <block type="math_number" id="BZ8iF)r/1l=N,e[s7z9O">
+                        <field name="NUM">500</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

@@ -1,0 +1,18 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_LOGIC,CAT_MATH,CAT_TEXT,CAT_TAB,CAT_VARIABLES,CAT_FUNCTIONS,CAT_LOOPS,CAT_bluetooth,CAT_ARDUINO,CAT_actionneur,CAT_ultrason,CAT_com
+	
+  </toolboxcategories>
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="base_loop" id="U)nFm4IR*XdK2}ZAQD*+" x="206" y="137">
+    <statement name="LOOP">
+      <block type="inout_analog_write" id="Mn2T#]:#sJ5-_|4=ji0|">
+        <field name="broche">5</field>
+        <value name="NUM">
+          <block type="light_sensor" id="iq2Kmx%rj0F!U_o4-Oqy">
+            <field name="broche">A0</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>

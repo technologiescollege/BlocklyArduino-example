@@ -1,0 +1,196 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_LOGIC,CAT_MATH,CAT_TEXT,CAT_TAB,CAT_VARIABLES,CAT_FUNCTIONS,CAT_LOOPS,CAT_bluetooth,CAT_ARDUINO,CAT_actionneur,CAT_ultrason,CAT_com
+	
+  </toolboxcategories>
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="base_loop" id="U)nFm4IR*XdK2}ZAQD*+" x="94" y="44">
+    <statement name="LOOP">
+      <block type="controls_if" id="3ytEb?FSZo~6om@~V3*)">
+        <value name="IF0">
+          <block type="logic_compare" id="+ixNfmsxi=ucMaV4tavz">
+            <field name="OP">LTE</field>
+            <value name="A">
+              <block type="lm35" id="#rq0k1;-G3bugjf8[W11">
+                <field name="broche">A0</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="ou2h+vqT:AiA1vmmB;.W">
+                <field name="NUM">16</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="digital_write" id="Hlg;DLucoW)`P!pk2~fL">
+            <field name="STAT">HIGH</field>
+            <value name="PIN">
+              <block type="math_number" id="p~2d?J)IsmTmRu`43J,K">
+                <field name="NUM">7</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="$)Blk8-1jf0C7i]X[.0b">
+            <value name="IF0">
+              <block type="intervalle" id="K194l5n+AYF4BIG1w49i">
+                <field name="comp_inf">LT</field>
+                <field name="comp_sup">LTE</field>
+                <value name="inf">
+                  <block type="math_number" id="k}K={c@WJjjeaLpjgoDF">
+                    <field name="NUM">16</field>
+                  </block>
+                </value>
+                <value name="valeur">
+                  <block type="lm35" id="V#dW[iuzc|wFJJm05=t4">
+                    <field name="broche">A0</field>
+                  </block>
+                </value>
+                <value name="sup">
+                  <block type="math_number" id="e}uO]/Zt75qiB]7I.5CG">
+                    <field name="NUM">18</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="digital_write" id="-)d4}t|ODwM7Q.tPDQBX">
+                <field name="STAT">HIGH</field>
+                <value name="PIN">
+                  <block type="math_number" id="B0=_~]B(K+Fpbj([|BF}">
+                    <field name="NUM">7</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="digital_write" id="UbDm2nL[oCo):6^W$#*+">
+                    <field name="STAT">HIGH</field>
+                    <value name="PIN">
+                      <block type="math_number" id="GgABsT,3$Ki{EEhv`)Wr">
+                        <field name="NUM">6</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="!9q8APBi%^/NWxgwjF9L">
+                <value name="IF0">
+                  <block type="intervalle" id="c{hL/^]K~+20d!*_Rc:;">
+                    <field name="comp_inf">LT</field>
+                    <field name="comp_sup">LTE</field>
+                    <value name="inf">
+                      <block type="math_number" id="fvZ((9J=[8{^c3X|C3:y">
+                        <field name="NUM">18</field>
+                      </block>
+                    </value>
+                    <value name="valeur">
+                      <block type="lm35" id="3t(rErhw0Q`}oeAMx4{c">
+                        <field name="broche">A0</field>
+                      </block>
+                    </value>
+                    <value name="sup">
+                      <block type="math_number" id="YcvL56bF-Sy8[;$VoiPB">
+                        <field name="NUM">20</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="digital_write" id="q8(r+y}09:tRJ*;5AL!B">
+                    <field name="STAT">HIGH</field>
+                    <value name="PIN">
+                      <block type="math_number" id="r^PvYUe9$O?+%$5{|WZZ">
+                        <field name="NUM">7</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="digital_write" id="8J6*X3/)[fx2raL206_w">
+                        <field name="STAT">HIGH</field>
+                        <value name="PIN">
+                          <block type="math_number" id="0XCEo?j*T-T6Md_M~a6i">
+                            <field name="NUM">6</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="digital_write" id="B^H9J-v9Bq?h3:NMG3k[">
+                            <field name="STAT">HIGH</field>
+                            <value name="PIN">
+                              <block type="math_number" id="VO}7!Z/q}XI9i`rDr`i.">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="UqV*f(#Brb%?mXMUS0Xs">
+                    <value name="IF0">
+                      <block type="logic_compare" id="daf/BCGtA*^cL0lH.fYQ">
+                        <field name="OP">GT</field>
+                        <value name="A">
+                          <block type="lm35" id="8rV16AsL:xUX8Y7P`iaE">
+                            <field name="broche">A0</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id=";}zu~M[d2++6AVOI;UtN">
+                            <field name="NUM">20</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="digital_write" id="QzOilY?XbzA!ip.W^AMJ">
+                        <field name="STAT">HIGH</field>
+                        <value name="PIN">
+                          <block type="math_number" id=")=:ZL@cAWS{/ZMxUnjG4">
+                            <field name="NUM">7</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="digital_write" id="#w{jnf*I`aOB9u:fA[a`">
+                            <field name="STAT">HIGH</field>
+                            <value name="PIN">
+                              <block type="math_number" id="gG#R`SfpjL)0L3Fk8Xhb">
+                                <field name="NUM">6</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="digital_write" id="+aFBSa6]uFV|T]D5rY82">
+                                <field name="STAT">HIGH</field>
+                                <value name="PIN">
+                                  <block type="math_number" id="VUvXv8-(J^F|LU}k!)i~">
+                                    <field name="NUM">5</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="digital_write" id="fYix7T:Or)xjl!WFQm.|">
+                                    <field name="STAT">HIGH</field>
+                                    <value name="PIN">
+                                      <block type="math_number" id="t`3I;|I2R`!fvwy=ANd]">
+                                        <field name="NUM">4</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
