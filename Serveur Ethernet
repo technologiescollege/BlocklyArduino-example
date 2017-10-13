@@ -1,0 +1,175 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO,CAT_I2C,CAT_SPI,CAT_ETHERNET</toolboxcategories>
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="base_setup_loop" id="=s]iU~`v8]M#Fu7zbh^K" x="-288" y="-288">
+    <statement name="DO">
+      <block type="ethernet_begin_dhcp_server" id="PXhzWA60,q{#0{KFrg9s">
+        <field name="VERSION"></field>
+        <field name="PORT">80</field>
+        <value name="MAC_ADDRESS">
+          <block type="ethernet_mac_address" id="n_AqnIl239W=pONMc)I!">
+            <field name="MAC_ADDRESS_1">DE</field>
+            <field name="MAC_ADDRESS_2">AD</field>
+            <field name="MAC_ADDRESS_3">BE</field>
+            <field name="MAC_ADDRESS_4">EF</field>
+            <field name="MAC_ADDRESS_5">FE</field>
+            <field name="MAC_ADDRESS_6">ED</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <statement name="LOOP">
+      <block type="controls_if" id="88Q$|W!Ui4KgC`vs7B$[">
+        <value name="IF0">
+          <block type="ethernet_client_for_server" id="-e1Iqy#$^;#E~[PMMYB*"></block>
+        </value>
+        <statement name="DO0">
+          <block type="controls_whileUntil" id="5-Z(Nr+:N3Ir.,~Z?Xvh">
+            <field name="MODE">WHILE</field>
+            <value name="BOOL">
+              <block type="ethernet_available" id="N:2R2LeU1*I/$`.t?a`Y"></block>
+            </value>
+            <statement name="DO">
+              <block type="variables_set" id="j7d;R^(_zU-6W-z@LK-{">
+                <field name="VAR">carac_requete</field>
+                <value name="VALUE">
+                  <block type="ethernet_read" id="*t$2xXAbHf|SDAMSaX8#"></block>
+                </value>
+                <next>
+                  <block type="controls_if" id="Iwg+]Gh9qxbLySHJAh^W">
+                    <value name="IF0">
+                      <block type="logic_compare" id="{M9ISg}BUueQ5oDn1p~:">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="0ZRuy?7r(*4TqYaFcr[$">
+                            <field name="VAR">carac_requete</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text_char" id="2K!LBt3}M@6/H0#6EcFJ">
+                            <field name="TEXT">\n</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="ethernet_println" id="/q6kNGwamZlH-Qd}cxB{">
+                        <value name="TEXT">
+                          <block type="text" id="JyUhX?8oAq;`BEr]x`)X">
+                            <field name="TEXT">HTTP/1.1 200 OK</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="ethernet_println" id="%_0#?y%n.LH3sQEvd6uA">
+                            <value name="TEXT">
+                              <block type="text" id=".D^^@Et@ULa7OPGIYc%,">
+                                <field name="TEXT">Content-Type: text/html</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="ethernet_println" id="_H=_KNoB#T?0VtX8*ZJE">
+                                <value name="TEXT">
+                                  <block type="text" id="Rgu$izqj9REIe.51rwt0">
+                                    <field name="TEXT"></field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="ethernet_println" id="!jH6MC{vFy5Qc}*K}4KX">
+                                    <value name="TEXT">
+                                      <block type="text" id="`+v?bS;=A;xgYTOPB`(h">
+                                        <field name="TEXT">&lt;HTML&gt;</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="ethernet_println" id="Hv;@I/c1;S!q3:.y0wGC">
+                                        <value name="TEXT">
+                                          <block type="text" id="Arp{RrCgzM)N5:rTPwAY">
+                                            <field name="TEXT">&lt;HEAD&gt;</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="ethernet_println" id="*;dD~l32rI+?=]+.X%h.">
+                                            <value name="TEXT">
+                                              <block type="text" id="xOS}Gc(vD4VU$km)MAw2">
+                                                <field name="TEXT">&lt;TITLE&gt; Hello &lt;/TITLE&gt;</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="ethernet_println" id="#ceEFj8DguAkB?bXNhj1">
+                                                <value name="TEXT">
+                                                  <block type="text" id="$DLwYVNC8u6IJ75p|hTN">
+                                                    <field name="TEXT">&lt;/HEAD&gt;</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="ethernet_println" id="a,]#FIM8}c#AmND+ksNN">
+                                                    <value name="TEXT">
+                                                      <block type="text" id="E2^TUkFA^!6j2Ith3c^S">
+                                                        <field name="TEXT">&lt;BODY&gt;</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="ethernet_println" id="u%9N{~oyGoaPXa:+Yu}K">
+                                                        <value name="TEXT">
+                                                          <block type="text" id="O`sx2mm1[,@-wG#qRqZ[">
+                                                            <field name="TEXT">&lt;H1&gt; HELLO with BlocklyArduino&lt;/H1&gt;</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="ethernet_println" id="f[Ce-|hBB`M%{ZQXVI7d">
+                                                            <value name="TEXT">
+                                                              <block type="text" id="s.$y3Qvxp#2-,}KV3n?D">
+                                                                <field name="TEXT">&lt;/BODY&gt;</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="ethernet_println" id="[6?f%eva9qYZT2I.1xZq">
+                                                                <value name="TEXT">
+                                                                  <block type="text" id="IXR4l_9DK0LhYYqs|mrS">
+                                                                    <field name="TEXT">&lt;/HTML&gt;</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="base_delay" id="iOhExjQQ1?rYn8fNb*/w">
+                                                                    <value name="DELAY_TIME">
+                                                                      <shadow type="math_number" id="u7^F~D-gs@j7cptV6H9C">
+                                                                        <field name="NUM">1</field>
+                                                                      </shadow>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="ethernet_stop" id="f9OW#,cJm7o2*.Y$8oL@"></block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
