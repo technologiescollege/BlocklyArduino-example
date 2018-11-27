@@ -1,7 +1,4 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <toolboxcategories>CAT_LOGIC,CAT_MATH,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_LOOPS,CAT_bluetooth,CAT_ARDUINO,CAT_actionneur,CAT_ultrason,CAT_com
-	
-  </toolboxcategories>
   <toolbox>toolbox_arduino_all</toolbox>
   <block type="base_loop" id="LHq[UW.X$:%%7/2(p[JQ" x="72" y="95">
     <statement name="LOOP">

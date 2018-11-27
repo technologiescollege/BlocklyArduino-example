@@ -1,8 +1,4 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <toolboxcategories>CAT_LOGIC,CAT_MATH,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_LOOPS,CAT_bluetooth,CAT_ARDUINO,CAT_actionneur,CAT_ultrason,CAT_com
-	
-  
-  </toolboxcategories>
   <toolbox>toolbox_arduino_all</toolbox>
   <block type="base_begin" id="S((#Wd,NMY6cd$.Ovv,+" x="-180" y="191">
     <next>
@@ -21,7 +17,7 @@
             </value>
             <value name="NUM">
               <block type="variables_get" id="$j[~;0?dcE_w)IIFtHfx" inline="false">
-                <field name="VAR">sol</field>
+                <field name="VAR">_sol</field>
               </block>
             </value>
             <value name="TPS">
@@ -40,7 +36,7 @@
             </value>
             <value name="NUM">
               <block type="variables_get" id="LWO,f+Ix=iWZ!61W7wJ|" inline="false">
-                <field name="VAR">la</field>
+                <field name="VAR">_la</field>
               </block>
             </value>
             <value name="TPS">
@@ -57,7 +53,7 @@
                 </value>
                 <value name="NUM">
                   <block type="variables_get" id="5`OSQ3_mM9n4/T2x0M}," inline="false">
-                    <field name="VAR">sol</field>
+                    <field name="VAR">_sol</field>
                   </block>
                 </value>
                 <value name="TPS">
@@ -74,7 +70,7 @@
                     </value>
                     <value name="NUM">
                       <block type="variables_get" id="V|yF4.!r%*~OdG(OWko7" inline="false">
-                        <field name="VAR">DO</field>
+                        <field name="VAR">_do</field>
                       </block>
                     </value>
                     <value name="TPS">
@@ -91,7 +87,7 @@
                         </value>
                         <value name="NUM">
                           <block type="variables_get" id="CyWAt`hkxa,]yyA8P:u6" inline="false">
-                            <field name="VAR">si</field>
+                            <field name="VAR">_si</field>
                           </block>
                         </value>
                         <value name="TPS">
@@ -115,7 +111,7 @@
                                 </value>
                                 <value name="NUM">
                                   <block type="variables_get" id="uC-`TS`;Jc.|0EN%u_/!" inline="false">
-                                    <field name="VAR">sol</field>
+                                    <field name="VAR">_sol</field>
                                   </block>
                                 </value>
                                 <value name="TPS">
@@ -134,7 +130,7 @@
                                 </value>
                                 <value name="NUM">
                                   <block type="variables_get" id="Yak-geL3h)]%OJ$u?N:I" inline="false">
-                                    <field name="VAR">la</field>
+                                    <field name="VAR">_la</field>
                                   </block>
                                 </value>
                                 <value name="TPS">
@@ -151,7 +147,7 @@
                                     </value>
                                     <value name="NUM">
                                       <block type="variables_get" id="7gx_aB0~*%g~ql4#^R#~" inline="false">
-                                        <field name="VAR">sol</field>
+                                        <field name="VAR">_sol</field>
                                       </block>
                                     </value>
                                     <value name="TPS">
@@ -168,7 +164,7 @@
                                         </value>
                                         <value name="NUM">
                                           <block type="variables_get" id="PqiQq8U!yvrf]-;Xt#*X" inline="false">
-                                            <field name="VAR">RE</field>
+                                            <field name="VAR">_re</field>
                                           </block>
                                         </value>
                                         <value name="TPS">
@@ -185,7 +181,7 @@
                                             </value>
                                             <value name="NUM">
                                               <block type="variables_get" id="zi]B{F)OL.[S^c8zuD$`" inline="false">
-                                                <field name="VAR">DO</field>
+                                                <field name="VAR">_do</field>
                                               </block>
                                             </value>
                                             <value name="TPS">
@@ -217,14 +213,10 @@
       </block>
     </next>
   </block>
-  <block type="base_define" id="]DBE$H^ZQt/z`l,t*Ozm" x="-513" y="456">
+  <block type="base_define" id="]DBE$H^ZQt/z`l,t*Ozm" x="-542" y="448">
     <statement name="DO">
       <block type="base_define_const" id="pX!7[ce~cuureZQPrM9D">
-        <value name="TEXT1">
-          <block type="variables_get" id="(,!n0We*sM-Wr}t6Q-Q_">
-            <field name="VAR">buzzer</field>
-          </block>
-        </value>
+        <field name="VAR">buzzer</field>
         <value name="TEXT2">
           <block type="math_number" id="v:BcYj)%x%,s!uro(UKJ" inline="false">
             <field name="NUM">5</field>
@@ -232,11 +224,7 @@
         </value>
         <next>
           <block type="base_define_const" id="(f^QZ{7Ei`iMTp+y%_pR">
-            <value name="TEXT1">
-              <block type="variables_get" id="u,d$n|f5[@VvBghjwMoI">
-                <field name="VAR">blanche</field>
-              </block>
-            </value>
+            <field name="VAR">blanche</field>
             <value name="TEXT2">
               <block type="math_number" id="5@*5A#1QoC9p}#;v#rKJ" inline="false">
                 <field name="NUM">600</field>
@@ -244,11 +232,7 @@
             </value>
             <next>
               <block type="base_define_const" id="`(,^n2-bCrggplpy,iQR">
-                <value name="TEXT1">
-                  <block type="variables_get" id="c+g%K)E.]f!.{JX:z-g8">
-                    <field name="VAR">noire</field>
-                  </block>
-                </value>
+                <field name="VAR">noire</field>
                 <value name="TEXT2">
                   <block type="math_number" id="oIT5]w#9DSdVZU(4c1|W" inline="false">
                     <field name="NUM">300</field>
@@ -256,11 +240,7 @@
                 </value>
                 <next>
                   <block type="base_define_const" id="aGywAU#9PrtLd%^i7koL">
-                    <value name="TEXT1">
-                      <block type="variables_get" id="ABEUn^J6/eBO,8-DqD@`">
-                        <field name="VAR">sol</field>
-                      </block>
-                    </value>
+                    <field name="VAR">_sol</field>
                     <value name="TEXT2">
                       <block type="math_number" id="UQD)c^?u~UV8Io1LU?,8" inline="false">
                         <field name="NUM">784</field>
@@ -268,11 +248,7 @@
                     </value>
                     <next>
                       <block type="base_define_const" id="4KJ0+7jCHA61VfN.D/eL">
-                        <value name="TEXT1">
-                          <block type="variables_get" id="UQ-MtsXi9iavhD3m|x2A">
-                            <field name="VAR">la</field>
-                          </block>
-                        </value>
+                        <field name="VAR">_la</field>
                         <value name="TEXT2">
                           <block type="math_number" id="9q$70Vu*DhTiH%z4VfDB" inline="false">
                             <field name="NUM">880</field>
@@ -280,11 +256,7 @@
                         </value>
                         <next>
                           <block type="base_define_const" id="*h+kjIqQgeE]kgQlTs*W">
-                            <value name="TEXT1">
-                              <block type="variables_get" id="lq[GKgSL[kGBy0UFl)yg">
-                                <field name="VAR">si</field>
-                              </block>
-                            </value>
+                            <field name="VAR">_si</field>
                             <value name="TEXT2">
                               <block type="math_number" id=":q@;dk?$Lsmj0n=25-a#" inline="false">
                                 <field name="NUM">988</field>
@@ -292,11 +264,7 @@
                             </value>
                             <next>
                               <block type="base_define_const" id="Cg--U[:Om:!0vY$ImEZQ">
-                                <value name="TEXT1">
-                                  <block type="variables_get" id="4NZWh7/9bH0|hE%(uF[.">
-                                    <field name="VAR">DO</field>
-                                  </block>
-                                </value>
+                                <field name="VAR">_do</field>
                                 <value name="TEXT2">
                                   <block type="math_number" id="htyLsyHa:yfPqvVGcd+G" inline="false">
                                     <field name="NUM">1046</field>
@@ -304,11 +272,7 @@
                                 </value>
                                 <next>
                                   <block type="base_define_const" id="mA=Gj=rcIc|SBlMEB8mM">
-                                    <value name="TEXT1">
-                                      <block type="variables_get" id="(I}A6$uv@rD7]=UKMT{j">
-                                        <field name="VAR">RE</field>
-                                      </block>
-                                    </value>
+                                    <field name="VAR">_re</field>
                                     <value name="TEXT2">
                                       <block type="math_number" id="TRNsX(]sUJswQD[5v*Y%" inline="false">
                                         <field name="NUM">1175</field>
